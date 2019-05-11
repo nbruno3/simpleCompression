@@ -88,10 +88,11 @@ def uncompress_text_file(filename):
 	
 	
 if __name__ == '__main__':
+	
 	# test_file.txt is default file included with program
 	# Feel free to change this value to your own file, or alter text within test_file.txt
+	# Also can change isCaseSensitive to True or False
 	compress_text_file('test_file.txt', True)
-	
 	uncompress_text_file('test_file_comp.txt')
 	
 	
