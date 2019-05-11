@@ -1,8 +1,6 @@
 # A simple compression algorithm based on reducing/eliminating repetitive data in file
 # Nick Bruno - 05/10/2019
 
-#NOTES: Can not currently handle double digit number of characters in a row in compression file
-
 import math
 import time
 
