@@ -1,4 +1,8 @@
-# A simple compression algorithm based on reducing/eliminating repetitive data in file
+# A simple compression algorithm based on reducing/eliminating repetitive data in a text file
+# This program compresses test_file.txt included in database, writes a new test_file_comp.txt file,
+# And then reads in that file and uncompresses it, rewriting it to test_file_uncomp.txt, which
+# is identical to our original file.
+
 # Nick Bruno - 05/10/2019
 
 import math
@@ -44,6 +48,9 @@ def compress_text_file(filename, isCaseSensitive):
 			comp_file.append(cnt)
 			comp_file.append(storage[i])
 			cnt = 1
+			
+	# Uncomment to view compression file in list form, for troubleshooting			
+	#print(comp_file)
 				
 	# Write the new compressed data to file
 	with open('test_file_comp.txt', 'w') as comp:
